@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<form action='.' method='POST'> {% csrf_token %}
+    {{form.as_p}}   <!-- p태그를 붙여서 출력 -->
+    <input type='submit' value='Save' />
+</form>
+
+
+
+
+
+
+{% endblock %}
